@@ -6,20 +6,23 @@ import time
 model_path = "./models/trin"
 
 prompt = """
-contraposto, half body shot, color pencil sketch of a walking Fashon model girl, art by akihiko yoshida
+((contraposto)), color pencil sketch of a ((walking)) Fashon model girl, ((landscape)) shot, beautiful face, detailed face, art by akihiko yoshida, solid background,
 """
 
 n_prompt = """
-2girls, ugly, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, extra limbs, disfigured, deformed, body out of frame, bad anatomy, blurred, watermark, grainy, signature, cut off, draft
+color pencil, sketchbook,
+2girls, ugly, poorly drawn hands, poorly drawn feet, poorly drawn face,
+out of frame, body out of frame, bad anatomy, blurred, grid, cut off, draft,
+watermark, signature, 
 """
 
 height = 512
-width = 512
+width = 256
 num_inference_steps=32
 # guidance_scale=15
 guidance_scale=20
 # guidance_scale=25
-NUM = 3
+NUM = 5
 
 pipe = StableDiffusionPipeline.from_pretrained(model_path, local_files_only=True, )
 
