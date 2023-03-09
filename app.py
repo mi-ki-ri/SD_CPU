@@ -6,17 +6,18 @@ import time
 model_path = "./models/trin"
 
 prompt = """
-A portrait of dancing girl, in the rain,
+A snapshot of ((dancing)) (girl), ((contraposto)), in the rain, low angle, full body, sketch by color pencil, art by akihiko yoshida
 """
 
 n_prompt = """
-man, human, woman, robot,
+2girls, ugly, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, extra limbs, disfigured, deformed, body out of frame, bad anatomy, blurred, watermark, grainy, signature, cut off, draft
 """
 
 height = 512
 width = 512
-num_inference_steps=32
-guidance_scale=15
+num_inference_steps=50
+# guidance_scale=15
+guidance_scale=20
 # guidance_scale=25
 
 ITER = 1
