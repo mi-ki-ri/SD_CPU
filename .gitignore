@@ -1,0 +1,5 @@
+dist/*.png
+dist/*.txt
+venv
+models/**/*.*
+!models/.gitkeep
